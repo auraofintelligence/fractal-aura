@@ -35,7 +35,6 @@
         radial-gradient(1200px 900px at 10% -10%,rgba(122,224,255,.12),transparent 60%),
         radial-gradient(900px 700px at 120% 10%,rgba(155,140,255,.10),transparent 55%),
         linear-gradient(180deg, #0a0c11, #0b0d12 30%, #0b0d12 70%, #090a0f);
-      background-attachment: fixed;
       overflow-x:hidden;
     }
     /* nav */
@@ -106,7 +105,8 @@
     .three{grid-template-columns: repeat(auto-fit, minmax(260px,1fr))}
     .card{
       background: var(--panel); backdrop-filter: blur(12px) saturate(140%);
-      border: var(--border); border-radius: var(--radius); padding: var(--card); box-shadow: var(--shadow)
+  border: var(--border); border-radius: var(--radius); padding: var(--card); box-shadow: var(--shadow);
+  overflow-wrap: break-word;
     }
     .card h3{margin:.2rem 0 10px; font-family:"Space Grotesk",Inter,sans-serif; letter-spacing:.2px}
     .muted{color:var(--muted)}
